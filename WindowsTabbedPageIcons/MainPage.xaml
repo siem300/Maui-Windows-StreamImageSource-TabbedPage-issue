@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WindowsTabbedPageIcons.MainPage" x:Name="Test">
+    <ContentPage Title="FileImageSource" IconImageSource="dotnet_bot.png"/>
+    <ContentPage Title="StreamImageSource" IconImageSource="{Binding ImageSource}">
+        <Image HorizontalOptions="Start" BindingContext="{Binding ., Source={x:Reference Test}}" Source="{Binding ImageSource}" HeightRequest="150"/>
+    </ContentPage>
+    <ContentPage Title="StreamImageSource" IconImageSource="dotnet_bot_embedded.png"/>
+</TabbedPage>
