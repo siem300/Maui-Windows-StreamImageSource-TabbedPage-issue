@@ -6,5 +6,4 @@
     <ContentPage Title="StreamImageSource" IconImageSource="{Binding ImageSource}">
         <Image HorizontalOptions="Start" BindingContext="{Binding ., Source={x:Reference Test}}" Source="{Binding ImageSource}" HeightRequest="150"/>
     </ContentPage>
-    <ContentPage Title="StreamImageSource" IconImageSource="dotnet_bot_embedded.png"/>
 </TabbedPage>
